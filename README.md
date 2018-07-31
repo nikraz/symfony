@@ -7,24 +7,20 @@ git clone https://github.com/nikraz/symfony.git
 cd symfony
 
 # Create .env file usig this schema
-
+----------------------------------------------
 ###> symfony/framework-bundle ###
-APP_ENV=dev
-APP_SECRET=9f118bb78d5d064470490c6ca7eb22af
-#TRUSTED_PROXIES=127.0.0.1,127.0.0.2
-#TRUSTED_HOSTS=localhost,example.com
-###< symfony/framework-bundle ###
 
-###> doctrine/doctrine-bundle ###
-# Format described at http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#connecting-using-a-url
-# For an SQLite database, use: "sqlite:///%kernel.project_dir%/var/data.db"
-# Configure your db driver and server_version in config/packages/doctrine.yaml
+APP_ENV=dev
+
+APP_SECRET=9f118bb78d5d064470490c6ca7eb22af
+
 DATABASE_URL=mysql://{DATABASE_USER}:{DATABASE_PASSWORD}@{DATABASE_HOST}:{DATABASE_PORT}/{DATABASE_NAME}
+
 ###< doctrine/doctrine-bundle ###
 AUTH0_CLIENT_ID=(Client ID on Auth0)
 AUTH0_CLIENT_SECRET=(Client Secret on Auth0)
 AUTH0_DOMAIN=(Domain on Auth0)
-
+-----------------------------------------------
 
 #create auth0 account
 https://auth0.com/signup
